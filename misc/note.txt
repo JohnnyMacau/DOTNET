@@ -1,3 +1,12 @@
+apsx ado.net 
+gridview,listview
+WebForm
+上传到github
+
+MVC
+WEB API
+.net + ORACLE
+
 https://www.runoob.com/aspnet/aspnet-tutorial.html
 https://docs.microsoft.com/zh-cn/aspnet/web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/create_the_data_access_layer
 
@@ -25,3 +34,34 @@ https://github.com/JohnnyMacau/DOTNET.git
 
 nuget command
 Install-Package all
+
+EF,VS版本
+https://blog.csdn.net/WuLex/article/details/80498950
+2009年發行ASP.NET MVC 1.0版
+
+2010年發行ASP.NET MVC 2.0版，VS2010
+
+2011年發行ASP.NET MVC 3.0版+EF4，需要.Net4.0支持，VS2011
+
+2012年發行ASP.NET MVC 4.0版+EF5，需要.Net4.0支持，VS2012
+
+2013年發行ASP.NET MVC 5.0版+EF6，需要.Net4.5支持，VS2013
+
+2015年發行ASP.NET MVC 6.0版+EF7，需要.Net5.0支持，VS2015
+
+ASP.NET 5.0　　　　　　将改名为　　ASP.NET Core 1.0
+
+ASP.NET MVC 6　　　　 将改名为　　ASP.NET MVC Core 1.0
+
+Entity Framework 7.0    将改名为　　Entity Framework Core 1.0
+
+.NET新的跨平台版本将命名为.NET Core 1.0
+
+
+vs2010使用dbcontext
+https://medium.com/brettyu/%E5%9C%A8vs2010%E4%B8%AD%E4%BD%BF%E7%94%A8entity-framework-dbcontext-141d14f9f321
+
+
+
+
+

@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebDemo.Models
 {
+    [Table("Classes")]
     public class Class
     {
         [ScaffoldColumn(false)]

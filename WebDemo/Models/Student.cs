@@ -1,7 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebDemo.Models
 {
+    [Table("Students")]
     public class Student
     {
         [ScaffoldColumn(false)]
