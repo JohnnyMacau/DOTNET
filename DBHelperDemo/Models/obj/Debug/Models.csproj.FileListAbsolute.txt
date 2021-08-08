@@ -1,0 +1,5 @@
+C:\Projects\DBHelperDemo\Models\bin\Debug\Models.dll
+C:\Projects\DBHelperDemo\Models\bin\Debug\Models.pdb
+C:\Projects\DBHelperDemo\Models\obj\Debug\Models.csprojAssemblyReference.cache
+C:\Projects\DBHelperDemo\Models\obj\Debug\Models.dll
+C:\Projects\DBHelperDemo\Models\obj\Debug\Models.pdb

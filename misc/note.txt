@@ -1,0 +1,27 @@
+https://www.runoob.com/aspnet/aspnet-tutorial.html
+https://docs.microsoft.com/zh-cn/aspnet/web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/create_the_data_access_layer
+
+用main方法添加数据
+https://blog.csdn.net/sosososolong/article/details/87896733
+
+
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet_regsql.exe生成用戶角色表
+
+DBHelper
+https://www.cnblogs.com/s0611163/archive/2016/12/22/6211672.html
+
+linkq
+https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/linq/basic-linq-query-operations
+
+native query
+https://www.cnblogs.com/dotnet261010/p/7249153.html
+
+三层架构下GridView控件实现增删改查
+https://blog.csdn.net/wangboxian/article/details/7763326
+
+github
+https://github.com/JohnnyMacau/DOTNET.git
+
+
+nuget command
+Install-Package all
