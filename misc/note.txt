@@ -13,8 +13,8 @@ https://docs.microsoft.com/zh-cn/aspnet/web-forms/overview/getting-started/getti
 用main方法添加数据
 https://blog.csdn.net/sosososolong/article/details/87896733
 
-
-C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet_regsql.exe生成用戶角色表
+生成用戶角色表
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet_regsql.exe
 
 DBHelper
 https://www.cnblogs.com/s0611163/archive/2016/12/22/6211672.html
@@ -61,7 +61,7 @@ Entity Framework 7.0    将改名为　　Entity Framework Core 1.0
 vs2010使用dbcontext
 https://medium.com/brettyu/%E5%9C%A8vs2010%E4%B8%AD%E4%BD%BF%E7%94%A8entity-framework-dbcontext-141d14f9f321
 
-
-
+asp.net控件
+https://wenku.baidu.com/view/6e7c768ec9d376eeaeaad1f34693daef5ef713ed.html
 
 

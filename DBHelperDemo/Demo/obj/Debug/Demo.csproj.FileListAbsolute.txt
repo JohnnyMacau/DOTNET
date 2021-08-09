@@ -36,3 +36,6 @@ C:\Projects\DBHelperDemo\Demo\obj\Debug\Demo.csproj.GenerateResource.cache
 C:\Projects\DBHelperDemo\Demo\obj\Debug\Demo.csproj.CopyComplete
 C:\Projects\DBHelperDemo\Demo\obj\Debug\Demo.exe
 C:\Projects\DBHelperDemo\Demo\obj\Debug\Demo.pdb
+D:\GITHUB\DOTNET\DBHelperDemo\Demo\bin\Debug\Demo.exe.config
+D:\GITHUB\DOTNET\DBHelperDemo\Demo\obj\Debug\Demo.exe
+D:\GITHUB\DOTNET\DBHelperDemo\Demo\obj\Debug\Demo.pdb
