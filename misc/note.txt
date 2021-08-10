@@ -5,7 +5,9 @@ WebForm
 
 MVC
 WEB API
+Web Service
 .net + ORACLE
+WPF?
 
 https://www.runoob.com/aspnet/aspnet-tutorial.html
 https://docs.microsoft.com/zh-cn/aspnet/web-forms/overview/getting-started/getting-started-with-aspnet-45-web-forms/create_the_data_access_layer
@@ -61,7 +63,14 @@ Entity Framework 7.0    将改名为　　Entity Framework Core 1.0
 vs2010使用dbcontext
 https://medium.com/brettyu/%E5%9C%A8vs2010%E4%B8%AD%E4%BD%BF%E7%94%A8entity-framework-dbcontext-141d14f9f321
 
+
 asp.net控件
 https://wenku.baidu.com/view/6e7c768ec9d376eeaeaad1f34693daef5ef713ed.html
+
+sql server 端口
+JOHNNY-PC\SQLEXPRESS
+.\SQLEXPRESS
+.,1433
+1433端口可在sql server configuration manager下面ipall配置，需重启服务
 
 
