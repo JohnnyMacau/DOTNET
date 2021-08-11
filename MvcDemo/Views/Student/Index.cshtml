@@ -5,10 +5,37 @@
 }
 
 <h2>Index</h2>
+<script type="text/javascript" src="~/Scripts/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        function getStudents() {
+            console.log(1111111111);
+        $.getJSON("api/StudentApi",
+            function (data) {
+            $('#students').empty(); // Clear the table body.
 
+        // Loop through the list of products.
+                $.each(data, function (key, val) {
+                    // Add a table row for the product.
+                    var row = '<td>' + val.StudentName + '</td><td>' + val.Address + '</td>';
+                    $('<tr />', {html: row })  // Append the name.
+            .appendTo($('#students'));
+    });
+});
+}
+
+$(document).ready(getStudents);
+</script>
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+
+<table>
+    <thead>
+        <tr><th>Name</th><th>Address</th></tr>
+    </thead>
+    <tbody id="students">
+    </tbody>
+</table>
 
 @using (Html.BeginForm())
 {
@@ -33,22 +60,22 @@
 
     @foreach (var item in Model)
     {
-<tr>
-    <td>
-        @Html.DisplayFor(modelItem => item.StudentName)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Address)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.classname)
-    </td>
-    <td>
-        @Html.ActionLink("Edit", "Edit", new { id = item.StudentID }) |
-        @Html.ActionLink("Details", "Details", new { id = item.StudentID }) |
-        @Html.ActionLink("Delete", "Delete", new { id = item.StudentID })
-    </td>
-</tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.classname)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.StudentID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.StudentID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.StudentID })
+            </td>
+        </tr>
     }
 
 </table>
