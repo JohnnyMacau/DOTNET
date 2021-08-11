@@ -12,7 +12,7 @@ namespace ContosoUniversity.DAL
         }
 
         public DbSet<Student> Students { get; set; }
-        public DbSet<Class> Courses { get; set; }
+        public DbSet<Class> Classes { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

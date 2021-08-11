@@ -67,10 +67,19 @@ https://medium.com/brettyu/%E5%9C%A8vs2010%E4%B8%AD%E4%BD%BF%E7%94%A8entity-fram
 asp.net控件
 https://wenku.baidu.com/view/6e7c768ec9d376eeaeaad1f34693daef5ef713ed.html
 
+
 sql server 端口
 JOHNNY-PC\SQLEXPRESS
 .\SQLEXPRESS
 .,1433
 1433端口可在sql server configuration manager下面ipall配置，需重启服务
 
+asp.net數據控件
+https://www.cnblogs.com/spilledlight/p/4875890.html
 
+gridview详解
+https://www.cnblogs.com/spilledlight/p/4875890.html
+
+自動更新數據庫， 在包管理命令行
+enable-migrations
+Update-Database -Verbose

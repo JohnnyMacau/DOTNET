@@ -61,12 +61,16 @@ namespace MvcDemo.Controllers
             {
                 return HttpNotFound();
             }
+
             return View(student);
         }
 
         // GET: Student/Create
         public ActionResult Create()
         {
+            SelectList classlist = new SelectList(db.Classes.ToList(), "classid", "classname");
+            ViewData["classlist"] = classlist;
+
             return View();
         }
 
@@ -75,10 +79,13 @@ namespace MvcDemo.Controllers
         // 详细信息，请参阅 https://go.microsoft.com/fwlink/?LinkId=317598。
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "StudentID,StudentName,Address,Class")] Student student)
+        public ActionResult Create([Bind(Include = "StudentID,StudentName,Address,Class")] Student student, String classid)
         {
             if (ModelState.IsValid)
             {
+                var c = db.Classes.Find(Convert.ToInt32(classid));
+                student.Class = c;
+
                 db.Students.Add(student);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -99,6 +106,9 @@ namespace MvcDemo.Controllers
             {
                 return HttpNotFound();
             }
+            SelectList classlist = new SelectList(db.Classes.ToList(), "classid", "classname", student.Class.ClassID);
+            ViewData["classlist"] = classlist;
+
             return View(student);
         }
 
@@ -107,12 +117,27 @@ namespace MvcDemo.Controllers
         // 详细信息，请参阅 https://go.microsoft.com/fwlink/?LinkId=317598。
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "StudentID,StudentName,Address")] Student student)
+        public ActionResult Edit([Bind(Include = "StudentID,StudentName,Address,Class")] Student student, String classid)
         {
             if (ModelState.IsValid)
             {
+                var c = db.Classes.Find(Convert.ToInt32(classid));
+                student.Class = c;
+               
                 db.Entry(student).State = EntityState.Modified;
+                db.Entry(student.Class).State = EntityState.Modified;
+
                 db.SaveChanges();
+
+                //SqlParameter[] para =  {
+                //       new  SqlParameter("@studentname",student.StudentName),
+                //       new  SqlParameter("@address",student.Address),
+                //       new  SqlParameter("@classid",classid),
+                //       new  SqlParameter("@StudentID",student.StudentID),
+                //    };
+                //db.Database.ExecuteSqlCommand("update student set studentname = @studentname, address = @address, Class_ClassID = @classid where StudentID=@StudentID", para);
+
+
                 return RedirectToAction("Index");
             }
             return View(student);
